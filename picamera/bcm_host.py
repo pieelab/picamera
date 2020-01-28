@@ -354,7 +354,7 @@ class _RGB(ct.Structure):
         ('blue_lower',  ct.c_uint8),
         ]
 
-class DISPMANX_CLAMP_KEYS_T(ct.Union):
+class DISPMANX_CLAMP_KEYS_T(ct.Structure):
     _fields_ = [
         ('yuv', _YUV),
         ('rgb', _RGB),
